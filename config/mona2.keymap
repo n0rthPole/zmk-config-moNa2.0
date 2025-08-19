@@ -24,14 +24,19 @@
     combos {
         compatible = "zmk,combos";
 
-        layer4_ESC {
-            bindings = <&lt 12 ESC>;
-            key-positions = <39 38>;
+        alt+ctrl+del {
+            bindings = <&kp LA(LC(DELETE))>;
+            key-positions = <40 9>;
         };
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
+        left_click {
+            bindings = <&mkp MB1>;
+            key-positions = <17 18>;
+        };
+
+        right_click {
+            bindings = <&mkp MB2>;
+            key-positions = <17 19>;
         };
     };
 
