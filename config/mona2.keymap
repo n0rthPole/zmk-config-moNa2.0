@@ -233,7 +233,6 @@
             label = "LAYOUT_SHIFT_TOGGLE_OFF";
         };
     };
-    };
 
     keymap {
         compatible = "zmk,keymap";
