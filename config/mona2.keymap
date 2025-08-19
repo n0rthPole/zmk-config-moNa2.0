@@ -107,12 +107,12 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        layer_3 {
+        win_layer_3 {
             bindings = <
-&trans  &kp LC(LS(TAB))     &kp PRINTSCREEN         &kp LC(TAB)              &trans                                     &trans  &kp HOME        &kp UP_ARROW    &kp END          &trans
-&trans  &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)     &kp LC(LG(LEFT_ARROW))   &kp LC(LG(RIGHT_ARROW))            &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &kp LEFT_SHIFT      &kp LG(LS(LEFT_ARROW))  &kp LG(LS(RIGHT_ARROW))  &trans                   &trans    &trans  &trans  &kp DELETE      &kp PAGE_UP     &kp PAGE_DOWN    &trans
-&trans  &trans              &trans                  &trans                   &trans                   &trans    &trans  &trans                                                   &trans
+&kp LA(TAB)  &kp LG(LEFT)            &kp LS(LC(UP_ARROW))    &kp LG(RIGHT)            &trans                             &trans  &trans  &trans  &trans  &trans
+&kp HOME     &kp LS(LC(LEFT_ARROW))  &kp LS(LC(DOWN_ARROW))  &kp LC(LS(RIGHT_ARROW))  &kp LC(LG(END))            &trans  &trans  &trans  &trans  &trans  &trans
+&trans       &kp LG(LS(LEFT_ARROW))  &kp LG(D)               &kp LG(LS(RIGHT_ARROW))  &trans           &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans       &trans                  &trans                  &trans                   &trans           &trans    &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
