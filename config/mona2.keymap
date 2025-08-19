@@ -25,7 +25,7 @@
         compatible = "zmk,combos";
 
         layer4_ESC {
-            bindings = <&lt 9 ESC>;
+            bindings = <&lt 12 ESC>;
             key-positions = <39 38>;
         };
 
@@ -173,6 +173,39 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
+        ipad_layer_1 {
+            bindings = <
+&kp ESCAPE          &kp KP_NUMBER_7             &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS                                &trans         &kp LS(TAB)  &kp LG(TAB)   &trans     &kp TAB
+&kp KP_MULTIPLY     &kp KP_NUMBER_4             &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp COLON                        &trans  &kp BACKSLASH  &mkp MB4     &kp UP_ARROW  &mkp MB5   &kp BACKSLASH
+&kp KP_SLASH        &kp KP_NUMBER_1             &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LS(MINUS)  &kp KP_NUMLOCK    &trans  &kp LC(HOME)   &kp LEFT     &kp DOWN      &kp RIGHT  &kp LC(END)
+&mt LEFT_GUI COMMA  &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_DOT       &kp BACKSPACE    &kp ENTER      &kp BACKSPACE     &trans  &trans                                               &trans
+            >;
+
+            sensor-bindings = <&scroll_right_left>;
+        };
+
+        ipad_layer_2 {
+            bindings = <
+&kp F1     &kp F2           &kp F3            &kp F4        &kp F5                               &kp F6                   &kp F7               &kp F8         &kp F9    &kp F10
+&kp PLUS   &kp EXCLAMATION  &kp LS(NUMBER_6)  &kp QUESTION  &kp RIGHT_BRACKET            &trans  &kp LEFT_BRACKET         &mkp MB1             &kp PAGE_UP    &mkp MB2  &kp SINGLE_QUOTE
+&trans     &kp PERCENT      &kp AMPERSAND     &kp AT_SIGN   &trans             &trans    &trans  &kp LS(INTERNATIONAL_1)  &kp INTERNATIONAL_3  &kp PAGE_DOWN  &trans    &kp F11
+&kp LCTRL  &kp LEFT_SHIFT   &kp HASH          &trans        &trans             &trans    &trans  &trans                                                                 &kp F12
+            >;
+
+            sensor-bindings = <&scroll_up_down>;
+        };
+
+        ipad_layer_3 {
+            bindings = <
+&kp LA(TAB)  &kp LG(LEFT)            &kp LS(LC(UP_ARROW))    &kp LG(RIGHT)            &trans                             &trans  &trans  &trans  &trans  &trans
+&kp HOME     &kp LS(LC(LEFT_ARROW))  &kp LS(LC(DOWN_ARROW))  &kp LC(LS(RIGHT_ARROW))  &kp LC(LG(END))            &trans  &trans  &trans  &trans  &trans  &trans
+&trans       &kp LG(LS(LEFT_ARROW))  &kp LG(D)               &kp LG(LS(RIGHT_ARROW))  &trans           &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans       &trans                  &trans                  &trans                   &trans           &trans    &trans  &trans                          &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+        };
+
         bt_setting_layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
@@ -190,6 +223,17 @@
 &trans  &mkp MB3  &mkp MB2  &mkp MB1  &trans            &trans  &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans
 &trans  &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans    &trans
 &trans  &trans    &trans    &trans    &trans  &trans    &trans  &trans                                &trans
+            >;
+
+            sensor-bindings = <&scroll_up_down>;
+        };
+
+        tenki_layer_14 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
